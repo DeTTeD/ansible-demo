@@ -1,4 +1,6 @@
-- hosts: all  
-  become: yes  
+- name: ping
+  hosts: all  
+  become: yes
+  gather_facts: true
   tasks:
    - ping
