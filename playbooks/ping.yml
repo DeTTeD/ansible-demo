@@ -1,3 +1,6 @@
--name: ping
+---
+- hosts: all
+  become: true
   tasks:
-  - ping
+  - ping:
+  crash: data
