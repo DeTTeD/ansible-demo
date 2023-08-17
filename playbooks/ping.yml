@@ -1,6 +1,7 @@
+---
 - name: ping
   hosts: all  
   become: yes
   gather_facts: true
-  tasks:
+  roles:
    - ping
